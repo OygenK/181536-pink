@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Климченко](https://up.htmlacademy.ru/adaptive/10/user/181536).
-* Наставник: `Неизвестно`.
+* Наставник: `Евгений Сергеев`.
 
 ---
 
