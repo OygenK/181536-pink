@@ -25,16 +25,15 @@
       <h1 class="main-title">Фотографии пользователей</h1>
       <p class="attention-text"><b>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</b></p>
       <section class="posts">
-        <ul class"posts__list">
+        <ul class="posts__list">
           <li class="posts__item">
             <img class="posts__photo" src="img/panorama.jpg" width="320" height="137" alt="Панорама местности с высого моста">
             <blockquote class="posts__text">
               Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </blockquote>
             <cite class="posts__author">Анна</cite>
-            <time class="posts__date" pubdate>(5 минут назад)</time>
+            <time class="posts__date">(5 минут назад)</time>
             <a class="posts__like" href="#">
-              <i class="posts__heart"></i>
               <span class="posts__like-text">Нравится:</span>
               <span class="posts__like-count">215</span>
             </a>
@@ -124,19 +123,19 @@
         <form class="send-photo__form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
           <img src="img/photo-7.jpg" width="280" height="374" alt="Зимняя дорога">
           <input type="file" name="photo" accept="img/*">
-          <input type="checkbox" name="default-img" id="default-img" checked>
-          <input type="checkbox" name="color-img" id="color-img">
-          <input type="checkbox" name="brightness-img" id="brightness-img">
-          <label class="send-photo__label send-photo__label_bg1" for="default-img">Изображение по умолчанию</label>
-          <label class="send-photo__label send-photo__label_bg2" for="color-img">Изображение перекрашенное</label>
-          <label class="send-photo__label send-photo__label_bg3" for="brightness-img">Изображение с яркостью</label>
+          <input type="checkbox" name="default-img" id="crop-img" checked>
+          <input type="checkbox" name="color-img" id="filter-img">
+          <input type="checkbox" name="brightness-img" id="contrast-img">
+          <label class="send-photo__label send-photo__label_crop" for="crop-img">Обрезать изображение</label>
+          <label class="send-photo__label send-photo__label_filter" for="filter-img">Применить фильт к изобржению</label>
+          <label class="send-photo__label send-photo__label_contrast" for="contrast-img">Изменить контрастность изображения</label>
           <div class="send-photo__param-control">
             <din class="send-photo__range-line">
               <div class="send-photo__range-toggle"></div>
             </din>
           </div>
-          <button class="send-photo__submit" type="submit">Запостить</button>
-          <button class="send-photo__reset" type="reset">Отмена</button>
+          <button class="btn send-photo__submit-btn" type="submit">Запостить</button>
+          <button class="btn send-photo__reset-btn" type="reset">Отмена</button>
         </form>
       </section>
     </main>

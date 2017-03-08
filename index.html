@@ -24,107 +24,119 @@
     <main>
       <h1 class="main-title main-title_hidden">Мобильное приложение Пинк</h1>
       <img class="page-image" src="img/iphone-5-in-hand.png" width="320" height="314" alt="В руке Айфон 5 с включенным фильтром цвета">
-      <section class="app-stor">
-        <ul class="app-stor__list">
-          <li class="app-stor__item">
-            <a class="app-stor__link" href="#"><h2 class="app-stor__main-title">Скачать приложение</h2></a>
+      <section class="app-store">
+        <button class="btn app-store__btn">Скачать приложение</button>
+        <ul class="app-store__list">
+          <li class="app-store__item">
+            <a class="app-store__link" href="#"><img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Эппл"></a>
           </li>
-          <li class="app-stor__item">
-            <a class="app-stor__link" href="#"><img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Эппл"></a>
+          <li class="app-store__item">
+            <a class="app-store__link" href="#"><img src="img/android-logo.svg" width="43" height="47" alt="Логотип Андроид"></a>
           </li>
-          <li class="app-stor__item">
-            <a class="app-stor__link" href="#"><img src="img/android-logo.svg" width="43" height="47" alt="Логотип Андроид"></a>
-          </li>
-          <li class="app-stor__item">
-            <a class="app-stor__link" href="#"><img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Майкрософт"></a>
+          <li class="app-store__item">
+            <a class="app-store__link" href="#"><img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Майкрософт"></a>
           </li>
         </ul>
-        <h2 class="app-stor__add-title">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</h2>
+        <h2 class="app-store__add-title">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</h2>
       </section>
       <section class="app-features">
         <p class="attention-text"><b>Устали от серости мегаполиса?</b></p>
         <p class="attention-text"><b>Нам есть, что вам предложить!</b></p>
         <dl class="app-features__list">
-          <dt class="app-features__feture"><h3>Поднимает настроение</h3></dt>
+          <dt class="app-features__feature"><h3>Поднимает настроение</h3></dt>
           <dd class="app-features__text"><p>Приложение позволит победить вам осеннюю хандру и депрессию буквально в несколько кликов!</p></dd>
 
-          <dt class="app-features__feture"><h3>Меняет мир вокруг</h3></dt>
+          <dt class="app-features__feature"><h3>Меняет мир вокруг</h3></dt>
           <dd class="app-features__text"><p>Сделайте снимок и украсте его смайликом, или текстовой подписью, чтобы усилить эффект</p></dd>
 
-          <dt class="app-features__feture"><h3>Заводит новых друзей</h3></dt>
+          <dt class="app-features__feature"><h3>Заводит новых друзей</h3></dt>
           <dd class="app-features__text"><p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p></dd>
         </dl>
         <img class="app-features__image" src="img/iphone.png" width="157" height="320" alt="Айфон">
       </section>
       <section class="app-previews">
-        <article class="post">
-          <blockquote class="post__text">
+        <input type="radio" id="btn-post1" name="toggle-post" checked>
+        <input type="radio" id="btn-post2" name="toggle-post">
+        <input type="radio" id="btn-post3" name="toggle-post">
+        <div class="sliders-controls">
+          <label class="sliders-controls__control" for="btn-post1"></label>
+          <label class="sliders-controls__control" for="btn-post2"></label>
+          <label class="sliders-controls__control" for="btn-post3"></label>
+        </div>
+        <article class="post-1">
+          <blockquote class="post-1__text">
             &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
           </blockquote>
-          <cite class="post__author">Николай Петров</cite>
+          <cite class="post-1__author">Николай Петров</cite>
         </article>
-        <ul class="links-list">
-          <li class="links-list__item"><a class="links-list__link" href="#">Ссылка на пост</a></li>
-          <li class="links-list__item"><a class="links-list__link" href="#">Ссылка на пост</a></li>
-          <li class="links-list__item"><a class="links-list__link" href="#">Ссылка на пост</a></li>
-        </ul>
+        <article class="post-2 post-2_hidden">
+          <blockquote class="post-2__text">
+            &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+          </blockquote>
+          <cite class="post-2__author">Петр Иванов</cite>
+        </article>
+        <article class="post-3 post-3_hidden">
+          <blockquote class="post-3__text">
+            &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+          </blockquote>
+          <cite class="post-3__author">Иван Сидоров</cite>
+        </article>
       </section>
       <article class="app-prices">
-        <!---<input type="radio" id="btn-1" name="toggle">
-        <input type="radio" id="btn-2" name="toggle" checked>
-        <input type="radio" id="btn-3" name="toggle">
-        <div class="sliders-controls">
-          <label class="sliders-controls__control" for="btn-1"></label>
-          <label class="sliders-controls__control" for="btn-2"></label>
-          <label class="sliders-controls__control" for="btn-3"></label>
-        </div>--->
+        <input type="radio" id="btn-price1" name="toggle-price">
+        <input type="radio" id="btn-price2" name="toggle-price" checked>
+        <input type="radio" id="btn-price3" name="toggle-price">
+        <div class="sliders-controls sliders-controls_bg">
+          <label class="sliders-controls__control" for="btn-price1"></label>
+          <label class="sliders-controls__control" for="btn-price2"></label>
+          <label class="sliders-controls__control" for="btn-price3"></label>
+        </div>
         <table class="app-prices__table">
           <tr class="app-prices__header">
-            <th class="app-prices__tariff"></th>
-            <th class="app-prices__tariff"><h3>База</h3><p>1,99 usd</p></th>
-            <th class="app-prices__tariff app-prices__tariff-hit">Хит</th>
-            <th class="app-prices__tariff"><h3>Стандарт</h3><p>3,99 usd</p></th>
-            <th class="app-prices__tariff"></th>
-            <th class="app-prices__tariff"><h3>Анлим</h3><p>9,99 usd</p></th>
+            <th class="app-prices__tariff">
+              <h3 class="app-prices__title">База</h3>
+              <p class="app-prices__price">1,99 usd</p>
+            </th>
+            <th class="app-prices__tariff app-prices__tariff-hit">
+              <h3 class="app-prices__title">Стандарт</h3>
+              <p class="app-prices__price">3,99 usd</p>
+            </th>
+            <th class="app-prices__tariff">
+              <h3 class="app-prices__title">Анлим</h3>
+              <p class="app-prices__price">9,99 usd</p>
+            </th>
           </tr>
           <tr class="app-prices__items">
             <td class="app-prices__item">Розовый фильтр</td>
-            <td class="app-prices__item app-prices__item-yes"><img src="img/yes.svg" width="31" height="21"></td>
             <td class="app-prices__item">Розовый фильтр</td>
-            <td class="app-prices__item app-prices__item-yes"><img src="img/yes.svg" width="31" height="21"></td>
             <td class="app-prices__item">Розовый фильтр</td>
-            <td class="app-prices__item app-prices__item-yes"><img src="img/yes.svg" width="31" height="21"></td>
           </tr>
           <tr class="app-prices__items">
             <td class="app-prices__item">Смайлики</td>
-            <td class="app-prices__item app-prices__item-no"><img src="img/no.svg" width="27" height="26"></td>
             <td class="app-prices__item">Смайлики</td>
-            <td class="app-prices__item app-prices__item-yes"><img src="img/yes.svg" width="31" height="21"></td>
             <td class="app-prices__item">Смайлики</td>
-            <td class="app-prices__item app-prices__item-yes"><img src="img/yes.svg" width="31" height="21"></td>
           </tr>
           <tr class="app-prices__items">
             <td class="app-prices__item">Комментарии</td>
-            <td class="app-prices__item app-prices__item-no"><img src="img/no.svg" width="27" height="26"></td>
             <td class="app-prices__item">Комментарии</td>
-            <td class="app-prices__item app-prices__item-no"><img src="img/no.svg" width="27" height="26"></td>
             <td class="app-prices__item">Комментарии</td>
-            <td class="app-prices__item app-prices__item-yes"><img src="img/yes.svg" width="31" height="21"></td>
           </tr>
         </table>
-        <p class="attention-text"><b>Остались вопросы?</b></p>
-        <p class="attention-text"><b>Свяжитесь с нами!</b></p>
       </article>
       <section class="contacts">
-        <h2 class="contacts__tiile contacts__title_hidden">Контактная информация</h2>
+        <p class="attention-text"><b>Остались вопросы?</b></p>
+        <p class="attention-text"><b>Свяжитесь с нами!</b></p>
+        <h2 class="contacts__title contacts__title_hidden">Контактная информация</h2>
         <h3 class="contacts__subtitle">Звоните:</h3>
         <p><a class="contacts__link" href="#">+7 (812) 555-66-66</a></p>
         <h3 class="contacts__subtitle">Пишите:</h3>
         <p><a class="contacts__link" href="#">mail@htmlacademy.ru</a></p>
         <h3 class="contacts__subtitle">Приезжайте в гости:</h3>
         <p><a class="contacts__link" href="map.html">ул. Большая Конюшенная, 19/8</a></p>
-        <img class="contacs__map" src="img/map.png" width="320" height="220" alt="Карта проезда">
+        <img class="contacts__map" src="img/map.png" width="320" height="220" alt="Карта проезда">
       </section>
     </main>
     <footer class="main-footer">
