@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="logo" href="index.html">
+        <img class="logo__text" src="img/logo.svg" width="?" height="?" alt="Логотип приложения Пинк">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list main-nav__list_hidden">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
+        </ul>
+        <button class="main-nav__burger">
+          <span class="main-nav__switcher">menu on-off</span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <h1 class="main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="attention-text">
+        <b>Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</b>
+      </p>
+      <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="main-form__fieldset">
+          <label class="mian-form__label">Фамилия:
+            <input type="text" name="surname" placeholder="Укажите фамилию" required autofocus>
+          </label>
+          <label class="mian-form__label">Имя:
+            <input type="text" name="first-name" placeholder="Введите ваше имя" required>
+          </label>
+          <label class="mian-form__label">Отчество:
+            <input type="text" name="patronymic" placeholder="Ну и отчество тоже">
+          </label>
+        </fieldset>
+        <fieldset class="main-form__fieldset">
+          <h2 class="main-form__title">Ваши безбашенные достижения в путешествии</h2>
+          <input type="checkbox" name="accident-1" id="accident-1" checked>
+          <label class="main-form__label" for="accident-1">Сделал селфи с акулой</label>
+          <input type="checkbox" name="accident-2" id="accident-2" checked>
+          <label class="main-form__label" for="accident-2">Обгорел на пляже</label>
+          <input type="checkbox" name="accident-3" id="accident-3">
+          <label class="main-form__label" for="accident-3">Видел Чака Нориса</label>
+          <input type="checkbox" name="accident-4" id="accident-4">
+          <label class="main-form__label" for="accident-4">Накупил сувениров</label>
+          <input type="checkbox" name="accident-5" id="accident-5" checked>
+          <label class="main-form__label" for="accident-5">Удержал башню</label>
+          <input type="checkbox" name="accident-6" id="accident-6">
+          <label class="main-form__label" for="accident-6">Разгромил отель</label>
+        </fieldset>
+        <fieldset class="main-form__fieldset">
+          <label class="main-form__label">Номер телефона
+            <input type="tel" name="tel" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="main-form__label">Адрес почты
+            <input type="email" name="email" placeholder="Введите почту" required>
+          </label>
+        </fieldset>
+        <fieldset class="main-form__fieldset">
+          <input type="radio" name="device" id="device-1" checked>
+          <label class="main-form__label" for="device-1">Pink для iOS</label>
+          <input type="radio" name="device" id="device-2">
+          <label class="main-form__label" for="device-2">Pink на Android</label>
+          <input type="radio" name="device" id="device-3">
+          <label class="main-form__label" for="device-3">Windows Phone</label>
+        </fieldset>
+        <fieldset class="main-form__fieldset">
+          <h2 class="main-form__title">Опишите свои эмоции</h2>
+          <textarea class="main-form__message" name="message" id="message" rows="10" cols="28">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+        <button class="main-form__submit" type="submit">Отправить форму</button>
+        <p class="main-form__note"><sup><span>&#10059;</span></sup> &mdash; Обязательные поля</p>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <a class="logo" href="index.html">
+        <img class="logo__text" src="img/logo.svg" width="?" height="?" alt="Логотип приложения Пинк">
+        <img class="logo__img" src="img/logo-img.svg" width="?" height="?" alt="Окуляры">
+      </a>
+      <ul class="main-footer__social">
+        <li class="main-footer__social-item"><a class="main-footer__social-link" href="#">Твиттер</a></li>
+        <li class="main-footer__social-item"><a class="main-footer__social-link" href="#">Фейсбук</a></li>
+        <li class="main-footer__social-item"><a class="main-footer__social-link" href="#">Инстаграм</a></li>
+      </ul>
+      <p class="main-footer__copyright">
+        <b>Разработано</b>
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
+  </body>
+</html>
